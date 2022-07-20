@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react"
 import "../styles/toDoList.css";
 import AddNewTask from './AddNewTask';
+import DeleteTask from './DeleteTask';
 interface Props{
 
 }
@@ -15,11 +16,15 @@ const ToDoList: React.FC<Props>= ({})=> {
     <div className="main-container">
         <div className="input-and-button-container">
       <input className="input" type="text" ref={inputRef} onChange={handleChange} placeholder="Your new task..."  />
-      <AddNewTask newTask={newTask}  Alltask={Alltask} setAllTask={setAllTask}/>
+      <AddNewTask newTask={newTask}  Alltask={Alltask} setAllTask={setAllTask} inputRef={inputRef}/>
       </div>
       <div className="task-container">
-    {Alltask.map((value)=>{
-     return <p>{value}</p>
+    {Alltask.map((value,id)=>{
+     return <>
+     <div className="task-value-container">
+      <p>{value}</p> <DeleteTask Alltask={Alltask} id={value} setAllTask={setAllTask}/> 
+      </div>
+      </>
     })}
       </div>
     </div>

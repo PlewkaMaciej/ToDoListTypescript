@@ -4,12 +4,14 @@ interface Props {
     newTask: string  
     setAllTask: React.Dispatch<React.SetStateAction<string[]>>
     Alltask: string[]
-
+inputRef:React.RefObject<HTMLInputElement|null>
 }
-const AddNewTask: React.FC<Props> = ({ setAllTask, newTask, Alltask }) => {
-    const addTaskToList = () => {
+const AddNewTask: React.FC<Props> = ({ setAllTask, newTask, Alltask ,inputRef}) => {
+    const addTaskToList = ():void => {
         setAllTask(prevAlltask => [...prevAlltask, newTask])
-
+        if (inputRef && inputRef.current) {
+            inputRef.current.value=""
+       }
     }
 
     return (
