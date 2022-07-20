@@ -47,3 +47,57 @@
     width: 280px;
     height: 50px;
 }
+.task-value-container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+    align-items: center;
+}
+.delete-task-button {
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: "Helvetica Now Display DW",sans-serif;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    vertical-align: center;
+  }
+  
+  .delete-task-button:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  }
+.add-task-button {
+    background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: "Helvetica Now Display DW",sans-serif;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    vertical-align: center;
+  }
+  
+  .add-task-button:hover {
+    background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+  }
+  .task-paragraph{
+    font-family: "Helvetica Now Display DW",sans-serif;
+  }

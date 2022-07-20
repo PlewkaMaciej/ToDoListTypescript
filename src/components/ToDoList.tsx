@@ -22,7 +22,7 @@ const ToDoList: React.FC<Props>= ({})=> {
     {Alltask.map((value,id)=>{
      return <>
      <div className="task-value-container">
-      <p>{value}</p> <DeleteTask Alltask={Alltask} id={value} setAllTask={setAllTask}/> 
+      <p className="task-paragraph">{value}</p> <DeleteTask Alltask={Alltask} id={value} setAllTask={setAllTask}/> 
       </div>
       </>
     })}
