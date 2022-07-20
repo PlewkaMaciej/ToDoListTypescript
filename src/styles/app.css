@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-app-container{
+    background-color: #89cff0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.app-heading{
+    font-family: "Helvetica Now Display DW",sans-serif;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 10px;
+}
